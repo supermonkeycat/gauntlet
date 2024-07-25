@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauntleterator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gauntleterator</h1>
+        <input type="file" id="mainImage" accept="image/*">
+        <input type="file" id="subImage1" accept="image/*">
+        <input type="file" id="subImage2" accept="image/*">
+        <input type="file" id="subImage3" accept="image/*">
+        <input type="file" id="subImage4" accept="image/*">
+        <input type="file" id="subImage5" accept="image/*">
+        <button id="generate">Generate</button>
+        <div id="spinner" class="hidden">Generating...</div>
+        <div id="result" class="hidden">
+            <canvas id="canvas"></canvas>
+            <a id="downloadLink" download="layout.png">Download Image</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
